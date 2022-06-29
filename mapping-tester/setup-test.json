@@ -29,9 +29,6 @@
                 "cases": {
                     "nn": {
                         "kind": "nearest-neighbor"
-                    },
-                    "lci": {
-                        "kind": "linear-cell-interpolation"
                     }
                 }
             },
