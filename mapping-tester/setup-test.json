@@ -29,7 +29,14 @@
                 "cases": {
                     "nn": {
                         "kind": "nearest-neighbor"
-                    }
+                    },
+                    "lci": {
+                        "kind": "linear-cell-interpolation"
+                    },
+                    "gaussian-n7-on": {
+                        "kind": "rbf-gaussian",
+                        "options": "shape-parameter=\"21.677530419787807\" polynomial=\"on\" solver-rtol=\"1e-06\""
+                      }
                 }
             },
             "meshes": {
