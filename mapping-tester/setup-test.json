@@ -12,8 +12,11 @@
         "syncmode": false,
         "meshes": {
             "A": {
-                "coarse_mesh": "${TEST_LOCATION}/coarse.vtk",
-                "coarse_mesh_05": "${TEST_LOCATION}/coarse_0.5.vtk"
+                "coarse_0.01": "coarse_0.01.vtk",
+                "coarse_0.05": "coarse_0.05.vtk",
+                "coarse_0.1": "coarse_0.1.vtk",
+                "coarse_0.25": "coarse_0.25.vtk",
+                "coarse_0.5": "coarse_0.5.vtk"
             },
             "B": {
                 "fine_mesh": "${TEST_LOCATION}/fine.vtk"
@@ -30,19 +33,37 @@
                     "nn": {
                         "kind": "nearest-neighbor"
                     },
+                    "np": {
+                        "kind": "nearest-projection"
+                    },
                     "lci": {
                         "kind": "linear-cell-interpolation"
                     },
-                    "gaussian-n7-on": {
+                    "gaussian-large": {
                         "kind": "rbf-gaussian",
-                        "options": "shape-parameter=\"21.677530419787807\" polynomial=\"on\" solver-rtol=\"1e-06\""
-                      }
+                        "options": "shape-parameter=\"20.0\" polynomial=\"on\" solver-rtol=\"1e-06\""
+                    },
+                    "gaussian-medium": {
+                        "kind": "rbf-gaussian",
+                        "options": "shape-parameter=\"10\" polynomial=\"on\" solver-rtol=\"1e-06\""
+                    },
+                    "gaussian-small": {
+                        "kind": "rbf-gaussian",
+                        "options": "shape-parameter=\"1\" polynomial=\"on\" solver-rtol=\"1e-06\""
+                    },
+                    "gaussian-very-small": {
+                        "kind": "rbf-gaussian",
+                        "options": "shape-parameter=\"0.1\" polynomial=\"on\" solver-rtol=\"1e-06\""
+                    }
                 }
             },
             "meshes": {
                 "A": [
-                    "coarse_mesh",
-                    "coarse_mesh_05"
+                    "coarse_0.5",
+                    "coarse_0.01",
+                    "coarse_0.1",
+                    "coarse_0.5",
+                    "coarse_0.25"
                 ],
                 "B": [
                     "fine_mesh"
