@@ -59,7 +59,7 @@
             },
             "meshes": {
                 "A": [
-                    "coarse_0.5",
+                    "coarse_0.05",
                     "coarse_0.01",
                     "coarse_0.1",
                     "coarse_0.5",
