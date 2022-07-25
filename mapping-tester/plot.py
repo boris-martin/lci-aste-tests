@@ -45,7 +45,7 @@ for mapping in mappings:
 
 # Plotting
 for mapping in mappings:
-    plt.loglog(resolutions, values_np[mapping], label=mapping)
+    plt.plot(resolutions, values_np[mapping], label=mapping)
 
 plt.title('Accuracy of different mappings')
 plt.ylabel('Mean quadratic error')
