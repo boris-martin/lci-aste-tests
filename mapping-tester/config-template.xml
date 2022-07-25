@@ -7,7 +7,7 @@
     <sink type="file" output="debug.log" filter="" format='%TimeStamp(format="%H:%M:%S.%f")%|%Participant%|%Rank%|%Module%|l%Line%|%Function%|%Severity%%Message%' enabled="true"/>
   </log>
   
-  <solver-interface dimensions="2">
+  <solver-interface dimensions="2" experimental="true">
     
     <!-- Data fields that are exchanged between the solvers -->
     <data:scalar name="Data" />
