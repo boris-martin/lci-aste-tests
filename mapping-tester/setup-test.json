@@ -33,6 +33,9 @@
                     "nn": {
                         "kind": "nearest-neighbor"
                     },
+                    "nng": {
+                        "kind": "nearest-neighbor-gradient",
+                    },
                     "np": {
                         "kind": "nearest-projection"
                     },
