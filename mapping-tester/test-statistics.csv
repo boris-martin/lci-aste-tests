@@ -1,0 +1,2 @@
+count,abs_min,abs_max,signed_min:,signed_max,median(abs),relative-l2,99th percentile(abs),95th percentile(abs),90th percentile(abs),mapping,constraint,mesh A,mesh B,ranks A,ranks B,globalTime,initializeTime,computeMappingTime,mapDataTime,peakMemA,peakMemB
+46677,3.1852421411571186e-07,3.3918009176466475,-3.3918009176466475,2.5871348728044508,0.8892618463953168,1.2664914770959717,3.032753753030218,2.4270814677145465,2.080911642471621,gaussian-very-small,consistent,coarse_0.5,fine_mesh,coarse_0.5,fine_mesh,6110,30,5843,3,124.859375,159.61328125
