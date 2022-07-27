@@ -4,7 +4,7 @@ set -e
 GENERATOR_PATH=~/Bureau/aste/tools/mesh-generators
 
 # Generate all coarse meshes,
-for RES in 0.5 0.25 0.1 0.05 0.01
+for RES in 0.5 0.25 0.2 0.1 0.05 0.04 0.03 0.02
 do
     echo ""
     python ${GENERATOR_PATH}/generate_unit_square.py --mesh coarse_${RES}.vtk --resolution $RES
