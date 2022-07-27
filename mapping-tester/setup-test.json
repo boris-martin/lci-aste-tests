@@ -12,10 +12,13 @@
         "syncmode": false,
         "meshes": {
             "A": {
-                "coarse_0.01": "coarse_0.01.vtk",
+                "coarse_0.02": "coarse_0.02.vtk",
+                "coarse_0.03": "coarse_0.03.vtk",
+                "coarse_0.04": "coarse_0.04.vtk",
                 "coarse_0.05": "coarse_0.05.vtk",
                 "coarse_0.1": "coarse_0.1.vtk",
                 "coarse_0.25": "coarse_0.25.vtk",
+                "coarse_0.2": "coarse_0.2.vtk",
                 "coarse_0.5": "coarse_0.5.vtk"
             },
             "B": {
@@ -33,18 +36,18 @@
                     "nn": {
                         "kind": "nearest-neighbor"
                     },
-                    "nng": {
-                        "kind": "nearest-neighbor-gradient"
+                    "lci": {
+                        "kind": "linear-cell-interpolation"
                     },
                     "np": {
                         "kind": "nearest-projection"
                     },
-                    "lci": {
-                        "kind": "linear-cell-interpolation"
+                    "nng": {
+                        "kind": "nearest-neighbor-gradient"
                     },
                     "gaussian-large": {
                         "kind": "rbf-gaussian",
-                        "options": "shape-parameter=\"20.0\" polynomial=\"on\" solver-rtol=\"1e-05\""
+                        "options": "shape-parameter=\"20\" polynomial=\"on\" solver-rtol=\"1e-05\""
                     },
                     "gaussian-medium": {
                         "kind": "rbf-gaussian",
@@ -52,21 +55,32 @@
                     },
                     "gaussian-small": {
                         "kind": "rbf-gaussian",
-                        "options": "shape-parameter=\"1\" polynomial=\"on\" solver-rtol=\"1e-05\""
+                        "options": "shape-parameter=\"5\" polynomial=\"on\" solver-rtol=\"1e-05\""
                     },
-                    "gaussian-very-small": {
-                        "kind": "rbf-gaussian",
-                        "options": "shape-parameter=\"0.1\" polynomial=\"on\" solver-rtol=\"1e-05\""
+                    "ctps-large": {
+                        "kind": "rbf-compact-tps-c2",
+                        "options": "support-radius=\"0.7\" polynomial=\"on\" solver-rtol=\"1e-05\""
+                    },
+                    "ctps-medium": {
+                        "kind": "rbf-compact-tps-c2",
+                        "options": "support-radius=\"0.3\" polynomial=\"on\" solver-rtol=\"1e-05\""
+                    },
+                    "ctps-small": {
+                        "kind": "rbf-compact-tps-c2",
+                        "options": "support-radius=\"0.1\" polynomial=\"on\" solver-rtol=\"1e-05\""
                     }
                 }
             },
             "meshes": {
                 "A": [
+                    "coarse_0.02",
+                    "coarse_0.03",
+                    "coarse_0.04",
                     "coarse_0.05",
-                    "coarse_0.01",
                     "coarse_0.1",
-                    "coarse_0.5",
-                    "coarse_0.25"
+                    "coarse_0.25",
+                    "coarse_0.2",
+                    "coarse_0.5"
                 ],
                 "B": [
                     "fine_mesh"
