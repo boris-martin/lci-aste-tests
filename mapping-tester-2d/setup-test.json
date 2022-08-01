@@ -1,6 +1,6 @@
 {
     "general": {
-        "function": "0.78 + cos(10*(x+y+z)) + exp(-z*z-x*x-y*y)",
+        "function": "franke2d(xy)",
         "ranks": {
             "A": [
                 1
