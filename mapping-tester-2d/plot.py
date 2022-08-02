@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-dataset = pd.read_csv('test-statistics.csv', delimiter=',')
+dataset = pd.read_csv('test-statistics-no-rbf.csv', delimiter=',')
 #print(dataset['mesh A'])
 
 #resolutions = np.array([0.5, 0.25, 0.1, 0.05, 0.01])

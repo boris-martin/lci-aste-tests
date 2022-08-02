@@ -44,30 +44,6 @@
                     },
                     "nng": {
                         "kind": "nearest-neighbor-gradient"
-                    },
-                    "gaussian-large": {
-                        "kind": "rbf-gaussian",
-                        "options": "shape-parameter=\"20\" polynomial=\"on\" solver-rtol=\"1e-05\""
-                    },
-                    "gaussian-medium": {
-                        "kind": "rbf-gaussian",
-                        "options": "shape-parameter=\"10\" polynomial=\"on\" solver-rtol=\"1e-05\""
-                    },
-                    "gaussian-small": {
-                        "kind": "rbf-gaussian",
-                        "options": "shape-parameter=\"5\" polynomial=\"on\" solver-rtol=\"1e-05\""
-                    },
-                    "ctps-large": {
-                        "kind": "rbf-compact-tps-c2",
-                        "options": "support-radius=\"0.7\" polynomial=\"on\" solver-rtol=\"1e-05\""
-                    },
-                    "ctps-medium": {
-                        "kind": "rbf-compact-tps-c2",
-                        "options": "support-radius=\"0.3\" polynomial=\"on\" solver-rtol=\"1e-05\""
-                    },
-                    "ctps-small": {
-                        "kind": "rbf-compact-tps-c2",
-                        "options": "support-radius=\"0.1\" polynomial=\"on\" solver-rtol=\"1e-05\""
                     }
                 }
             },
