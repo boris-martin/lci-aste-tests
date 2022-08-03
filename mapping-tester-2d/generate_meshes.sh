@@ -19,13 +19,13 @@ FILES=$(ls | grep coarse.*\.vtk)
 echo "Put this in setup.json at the section of A's meshes: (remove last comma)"
 for file in ${FILES}
 do
-    mesh_name=$(echo $file | sed 's/\(.*\)\.vtk/\1/')
+    mesh_name=$(echo $file | sed 's/coarse_\(.*\)\.vtk/\1/')
     echo "\"$mesh_name\": \"${file}\","
 done
 
 echo "Put this in setup.json at the section of A's meshes to be used in the mapping: (remove last comma)"
 for file in ${FILES}
 do
-    mesh_name=$(echo $file | sed 's/\(.*\)\.vtk/\1/')
+    mesh_name=$(echo $file | sed 's/coarse_\(.*\)\.vtk/\1/')
     echo "\"$mesh_name\","
 done
