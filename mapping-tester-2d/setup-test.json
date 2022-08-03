@@ -1,6 +1,6 @@
 {
     "general": {
-        "function": "franke2d(xy)",
+        "function": "rosenbrock2d(xy)",
         "ranks": {
             "A": [
                 1
