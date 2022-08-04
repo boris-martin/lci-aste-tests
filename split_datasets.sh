@@ -29,8 +29,6 @@ done
 
 CONV=~/Bureau/aste/tools/mapping-tester/plotconv.py
 
-$CONV -f mapping-tester-2d/test-statistics-franke2d-no-rbf.csv
-
 
 for f in ${files[@]};
 do
@@ -38,6 +36,7 @@ do
 
   # Plot for RBF
   $CONV -f $f-rbf.csv
+  echo "Handling $f-rbf"
   cp result-computet.pdf plots/compute_map_time/$NAME-rbf.pdf
   cp result-mapt.pdf plots/map_time/$NAME-rbf.pdf
   cp result-error.pdf plots/error/$NAME-rbf.pdf
@@ -45,6 +44,7 @@ do
 
   # Plot for non-RBF
   $CONV -f $f-no-rbf.csv
+  echo "Handling $f-no-rbf"
   cp result-computet.pdf plots/compute_map_time/$NAME-no-rbf.pdf
   cp result-mapt.pdf plots/map_time/$NAME-no-rbf.pdf
   cp result-error.pdf plots/error/$NAME-no-rbf.pdf
