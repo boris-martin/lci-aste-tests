@@ -1,6 +1,6 @@
 {
     "general": {
-        "function": "franke2d(xy)",
+        "function": "5*x^2 - 3*y^2",
         "ranks": {
             "A": [
                 1

@@ -1,6 +1,6 @@
 {
     "general": {
-        "function": "rosenbrock3d",
+        "function": "5*x^2-3*y^2",
         "ranks": {
             "A": [
                 1
